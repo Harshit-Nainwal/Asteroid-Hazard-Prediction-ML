@@ -1,5 +1,13 @@
 # Asteroid Hazard Detection and Impact Risk Assessment using Machine Learning
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
+![Deep Learning](https://img.shields.io/badge/Deep-Learning-orange)
+![Astrophysics](https://img.shields.io/badge/Domain-Astrophysics-purple)
+![Research Project](https://img.shields.io/badge/Project-Type%3A%20Research-red)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 ## Overview
 
 Near-Earth Objects (NEOs) such as asteroids pose potential risks to Earth if their orbits intersect with Earth's trajectory. Early detection and classification of **Potentially Hazardous Asteroids (PHAs)** is therefore critical for planetary defense.
@@ -22,6 +30,50 @@ This project introduces a **multi-stage asteroid risk assessment framework**:
 
 This creates a more comprehensive approach compared to traditional asteroid classification systems.
 
+---
+flowchart LR
+
+A[NASA Small Body Database Dataset]
+
+A --> B[Data Cleaning]
+
+B --> C[Feature Engineering
+Diameter Estimation Formula]
+
+C --> D[Exploratory Data Analysis
+Heatmaps & Distribution]
+
+D --> E[Class Imbalance Handling
+SMOTE]
+
+E --> F[Train/Test Split]
+
+F --> G1[Logistic Regression]
+F --> G2[Random Forest]
+F --> G3[XGBoost]
+F --> G4[Neural Network]
+
+G1 --> H[Model Evaluation]
+G2 --> H
+G3 --> H
+G4 --> H
+
+H --> I[ROC Curve Comparison]
+
+I --> J[Best Model Selection
+Random Forest]
+
+J --> K[Explainable AI
+SHAP Analysis]
+
+K --> L[Physics Impact Model
+Energy Calculation]
+
+L --> M[Environmental Impact Simulation]
+
+M --> N[Societal Risk Scoring]
+
+N --> O[Final Asteroid Risk Assessment]
 ---
 
 ## Dataset
@@ -154,6 +206,29 @@ The risk score incorporates:
 The final risk score is normalized to a **0–100 scale**.
 
 ---
+flowchart TD
+
+A[Asteroid Orbital Data] --> B[Preprocessing]
+B --> C[Feature Extraction]
+
+C --> D[Machine Learning Models]
+
+D --> E1[Random Forest]
+D --> E2[XGBoost]
+D --> E3[Logistic Regression]
+D --> E4[Neural Network]
+
+E1 --> F[Model Selection]
+
+F --> G[Explainability - SHAP]
+
+G --> H[Impact Energy Model]
+
+H --> I[Environmental Effects]
+
+I --> J[Societal Risk Model]
+
+J --> K[Final Hazard Assessment]
 
 ## Research Validation
 
