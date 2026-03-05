@@ -30,7 +30,9 @@ This project introduces a **multi-stage asteroid risk assessment framework**:
 
 This creates a more comprehensive approach compared to traditional asteroid classification systems.
 
----
+---## Machine Learning Pipeline
+
+```mermaid
 flowchart LR
 
 A[NASA Small Body Database Dataset]
@@ -74,6 +76,7 @@ L --> M[Environmental Impact Simulation]
 M --> N[Societal Risk Scoring]
 
 N --> O[Final Asteroid Risk Assessment]
+```
 ---
 
 ## Dataset
@@ -206,6 +209,9 @@ The risk score incorporates:
 The final risk score is normalized to a **0–100 scale**.
 
 ---
+## Machine Learning Pipeline
+
+```mermaid
 flowchart TD
 
 A[Asteroid Orbital Data] --> B[Preprocessing]
@@ -229,6 +235,7 @@ H --> I[Environmental Effects]
 I --> J[Societal Risk Model]
 
 J --> K[Final Hazard Assessment]
+```
 
 ## Research Validation
 
